@@ -6,12 +6,12 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit",
-    "test": "jest",
-    "test:moke": "mochapack --webpack-config webpack.config.js --require test/setup.js test/**/*.spec.js"
+    "test": "jest"
   },
   "dependencies": {
+    "babel-loader": "^7.1.5",
     "core-js": "^3.6.5",
+    "regenerator-runtime": "^0.13.5",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
@@ -24,10 +24,9 @@
     "@vue/cli-plugin-unit-jest": "^4.4.5",
     "@vue/cli-service": "^4.4.0",
     "@vue/test-utils": "^1.0.3",
-    "babel-core": "^6.26.3",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.0.1",
-    "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
